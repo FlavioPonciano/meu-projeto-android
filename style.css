@@ -1,0 +1,170 @@
+/* ---- Configurações Globais ---*/
+@charset 'UTF8';
+@font-face {
+    font-family: 'IDroid';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* > p {
+    text-indent: 20px;
+    margin: 10px 0px;
+}
+
+body{
+    background: #16F275;
+}
+
+/* ---- Cabeçalho e Menu principal ---- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, #03A688, #0ABF8C, #11D97C);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.39);
+    color: white;
+    margin-bottom: 5px;
+}
+
+nav {
+    align-self: flex-start;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 17px 0px 15px 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 0px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.39);
+
+}
+
+nav ul a:hover{
+    background: #209e578e;
+    text-shadow: 10px #209e578e;
+}
+
+header > h1 {
+    padding: 25px 0px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.39);
+}
+
+header > p {
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.39);
+}
+
+/* ---- Conteudo do corpo ---- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: white;
+    padding: 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.39);
+    width: 800px;
+    margin: auto;
+}
+
+/* --- função para mudar o tamanho da imagem */
+.img-box {
+    width: 100%;
+}
+
+.large-img {
+    display: none;
+}
+
+@media only screen and (min-width: 584px) {
+    .small-img {
+      display: none;
+    }
+
+    .large-img {
+      display: block;
+      width: 100%;
+    }
+  }
+/* --- FIM da função para mudar o tamanho da imagem */
+
+/*Deixando a lista dividida */
+  .list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: underline;
+  }
+
+  .list-column {
+    flex-basis: 45%;
+  }
+/* ---- FIM função lista ---- */
+
+main > h1, h2 {
+    font-family: 'IDroid', Arial, Helvetica, sans-serif;
+    color: #04836b;
+    background-image: linear-gradient(to right,#0abf8c62, white);
+    align-self: flex-start;
+    margin: 20px 0px;
+}
+
+section{
+    border-radius: 10px;
+    background: #16f27548;
+    margin: 10px 0px;
+}
+section > h3 {
+    padding-left: 4px;
+    background: #0ABF8C;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.video {
+    background: #02614f;
+    width: 100%;
+    align-items: center;
+}
+.video-yt {
+    padding-left: 40px;
+    width: 90%;
+}
+
+a {
+    color: #02614f;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.especial::after {
+    content: "\1F517";
+}
+/* ---- Rodapé do site ---- */
+
+footer {
+    background: #02614f;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.texto-rodape {
+    font-weight: bolder;
+}
